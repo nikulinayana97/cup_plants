@@ -1,0 +1,80 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+@font-face {
+    font-family: 'miso-regular';
+    src: url('../fonts/miso-regular-webfont.woff2') format('woff2'),
+         url('../fonts/miso-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-family: 'miso-regular', sans-serif;
+	background-color: #FDDE7E;
+	width: 100vw;
+	height: 100vh;
+}
+
+.container{
+	display: flex;
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cup_block{
+    margin: 0 15px;
+    padding: 50px 0 55px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	flex-basis: 30%;
+	height: 440px;
+    flex-grow: 1;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.29);
+}
+
+.cup_block:hover,
+.cup_block:focus,
+.cup_block:active{
+	height: 500px;
+	background-color: #ce9739;
+	transition: all 0.3s cubic-bezier(0.26, 0.04, 0.74, 0.99);
+}
+
+.cup_block:hover .price{
+	color: #fff;
+}
+
+
+.price{
+    font-size: 70px;
+    color: #41B284;
+}
+
+.cup{
+	margin: 0 auto;
+	max-width: 135px;
+}
+
+.title{
+	font-size: 50px;
+	color: #333333;
+	font-weight: normal;
+}
+
+.desc{
+	margin: 0 auto;
+    width: 170px;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+    font-weight: normal;
+}
